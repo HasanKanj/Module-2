@@ -1,37 +1,119 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>module2-solution</title>
+      <link rel="stylesheet" href="./main.css" />
+      </head>
+      <STYLE>* {
+  box-sizing: border-box;
+}
 
-You can use the [editor on GitHub](https://github.com/HasanKanj/Module-2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+html {
+  background-color: rgb(226, 226, 74);
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+section {
+  border: 1px white solid;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  /* margin: 1%; */
 
-### Markdown
+  padding: 10px;
+  padding-top: 60px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+p {
+  text-align: center;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
-```markdown
-Syntax highlighted code block
+section > span {
+  background-color: rgb(109, 109, 109);
+}
 
-# Header 1
-## Header 2
-### Header 3
+span p.title {
+  font-weight: bold;
+}
 
-- Bulleted
-- List
+span {
+  border: 1px solid black;
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
 
-1. Numbered
-2. List
+/* Media Queires */
+/* Destop */
+/* 992px */
 
-**Bold** and _Italic_ and `Code` text
+/* Tablet */
+/* 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.first {
+    width: 50%;
+  }
 
-[Link](url) and ![Image](src)
-```
+  section.second {
+    width: 50%;
+  }
+  section.third {
+    width: 100%;
+    /* margin-top: 20px; */
+  }
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+/* mobile */
+/* max-width 767px */
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+  }
+}</STYLE>
+      <body>
+      <h1>Our Menu</h1>
+      <div class="container">
+      <section class="first">
+      <span><p class="title">Chicken</p></span>
+      <p>
+      Ad magna esse culpa anim reprehenderit fugiat aute labore pariatur.
+      Reprehenderit non cupidatat ea cillum exercitation pariatur
+      exercitation magna aliquip do laborum magna mollit ullamco. Laborum
+      velit pariatur sint eu et eiusmod dolor velit consequat.
+      </p>
+      </section>
+      <section class="second">
+      <span><p class="title">Beef</p></span>
+      <p>
+       Ad magna esse culpa anim reprehenderit fugiat aute labore pariatur.
+       Reprehenderit non cupidatat ea cillum exercitation pariatur
+       exercitation magna aliquip do laborum magna mollit ullamco. Laborum
+       velit pariatur sint eu et eiusmod dolor velit consequat.
+    </p>
+   </section>
+   <section class="third">
+  <span><p class="title">Sushi</p></span>
+  <p>
+   Ad magna esse culpa anim reprehenderit fugiat aute labore pariatur.
+   Reprehenderit non cupidatat ea cillum exercitation pariatur
+   exercitation magna aliquip do laborum magna mollit ullamco. Laborum
+   velit pariatur sint eu et eiusmod dolor velit consequat.
+ </p>
+</section>
+</div>
+<script src="./index.js" type="module"></script>
+</body>
+</html>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HasanKanj/Module-2/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
